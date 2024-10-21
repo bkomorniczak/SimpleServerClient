@@ -1,7 +1,10 @@
+name: tcp-server
 replicas: 3
+
 image:
-  repository: my-tcp-server
+  repository: komob/my-tcp-server
   tag: latest
+
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80

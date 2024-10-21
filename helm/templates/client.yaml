@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tcp-client
+  labels:
+    app: tcp-client
+spec:
+  containers:
+    - name: tcp-client-container
+      image: your-client-image
+      command: ["/bin/sh", "-c"]
+      args: ["while true; do echo 'Communicating with server'; nc tcp-server-service 80; sleep 5; done"]

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tcp-server-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tcp-server
+  template:
+    metadata:
+      labels:
+        app: tcp-server
+    spec:
+      containers:
+        - name: tcp-server
+          image: komob/my-tcp-server:latest
+          ports:
+            - containerPort: 8080

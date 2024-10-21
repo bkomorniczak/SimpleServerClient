@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "tcp-server.fullname" . }}
+  name: {{ .Values.name }}deployment
+  labels:
+    app: {{ .Values.name }}
 spec:
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
-      app: {{ include "tcp-server.name" . }}
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: {{ include "tcp-server.name" . }}
+        app: {{ .Values.name }}
     spec:
       containers:
-        - name: {{ include "tcp-server.name" . }}
+        - name: {{ .Values.name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
-            - containerPort: {{ .Values.service.port }}
+            - containerPort: 8080

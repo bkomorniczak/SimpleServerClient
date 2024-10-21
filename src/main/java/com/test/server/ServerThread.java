@@ -1,3 +1,5 @@
+package com.test.server;
+
 import java.net.Socket;
 
 public class ServerThread extends Thread {
