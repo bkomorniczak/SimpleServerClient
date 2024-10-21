@@ -7,10 +7,17 @@ plugins {
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
-tasks.jar {
-    archiveBaseName.set("tcp-server") // Set custom base name for the JAR
-    archiveVersion.set("") // Removes the version from the JAR file name
-    archiveClassifier.set("") // Removes any classifier like 'plain'
+tasks.named<Jar>("jar") {
+    archiveBaseName.set("tcp-server")
+    archiveVersion.set("")
+    archiveClassifier.set("")
+}
+
+tasks.register<Jar>("clientJar") {
+    archiveBaseName.set("tcp-client")
+    archiveVersion.set("")
+    archiveClassifier.set("")
+    from(sourceSets.main.get().output)
 }
 
 java {
