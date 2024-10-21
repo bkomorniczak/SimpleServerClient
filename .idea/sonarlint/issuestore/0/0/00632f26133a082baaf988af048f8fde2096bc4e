@@ -1,0 +1,12 @@
+
+0
+java:S1220""Move this file to a named package.
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ùÜï­ª2
+G	java:S106"+Replace this use of System.out by a logger.(è»÷ƒ8€İï­ª2
+L	java:S106"+Replace this use of System.out by a logger.(á‹¼©úÿÿÿÿ8İï­ª2
+W
+java:S1161$":Add the "@Override" annotation above this method signature(“–ış8†İï­ª2
+L	java:S106%"+Replace this use of System.out by a logger.(ó™¸Êıÿÿÿÿ8†İï­ª2
+L
+java:S1068"*Remove this unused "socket" private field.(Å’¬Úşÿÿÿÿ8ˆİï­ª2

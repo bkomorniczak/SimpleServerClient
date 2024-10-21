@@ -1,0 +1,4 @@
+apiVersion: v2
+name: tcp-server-chart
+description: A Spring Boot TCP Server
+version: 0.1.0

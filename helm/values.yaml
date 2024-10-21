@@ -1,0 +1,7 @@
+replicas: 3
+image:
+  repository: my-tcp-server
+  tag: latest
+service:
+  type: ClusterIP
+  port: 80

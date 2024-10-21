@@ -1,0 +1,6 @@
+
+0
+java:S1220""Move this file to a named package.
+V
+java:S1118":Add a private constructor to hide the implicit public one.(ýëÃ78ã™ ®ª2
+F	java:S106"+Replace this use of System.out by a logger.(Üßã,8é™ ®ª2
