@@ -3,7 +3,7 @@
 FROM arm64v8/openjdk:17 AS builder
 WORKDIR /app
 COPY . /app
-RUN gradle build
+RUN ./gradlew build
 
 # Create server image
 FROM arm64v8/openjdk:17 AS server
