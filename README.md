@@ -35,7 +35,7 @@ kubectl apply -f tcp-server-deployment.yaml
 
 Apply the client deployment
 ```
-kubectl apply -f tcp-client-deployment.yaml
+kubectl apply -f k8s/tcp-client-deployment.yaml
 
 ```
 check 
@@ -43,5 +43,6 @@ check
 kubectl get pods
 ```
 
-
+```kubectl apply -f k8s/tcp-server-service.yaml```
+```kubectl apply -f k8s/tcp-client-service.yaml```
 

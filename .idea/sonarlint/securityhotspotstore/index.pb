@@ -54,3 +54,11 @@ J
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+N
+k8s/tcp-server-deployment.yaml,d/3/d37f29b2f200d48c325b1d2fc02feb9b689777f0
+N
+k8s/tcp-client-deployment.yaml,d/0/d03f1f359a2528dc0bb0e79802547dd45cbb8b7f
+K
+k8s/tcp-server-service.yaml,3/9/3907fbd68dff911e818a7cf1b5dacdec082d3b61
+K
+k8s/tcp-client-service.yaml,c/2/c2b029763b51f92dfe95e4d4c10a10b46429e16e
