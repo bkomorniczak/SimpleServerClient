@@ -46,3 +46,20 @@ kubectl get pods
 ```kubectl apply -f k8s/tcp-server-service.yaml```
 ```kubectl apply -f k8s/tcp-client-service.yaml```
 
+Update helma po zmianach values promethesusa
+```
+helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yaml -n monitoring
+```
+
+przekierowanie prometheusa
+```
+kubectl port-forward svc/prometheus-kube-prometheus-prometheus 9090:9090 -n monitoring
+```
+
+przekierowanie na grafane
+```
+kubectl port-forward svc/prometheus-grafana 3000:80 -n monitoring
+```
+
+admin,prom-operator
+dashboard id 15761
